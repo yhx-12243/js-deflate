@@ -1081,7 +1081,7 @@ var zip_gen_bitlen = function(desc) { // the tree descriptor
 		continue;
 	    if(tree[m].dl != bits) {
 		zip_opt_len += (bits - tree[m].dl) * tree[m].fc;
-		tree[m].fc = bits;
+		tree[m].dl = bits;
 	    }
 	    n--;
 	}
